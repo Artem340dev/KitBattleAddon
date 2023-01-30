@@ -1,0 +1,4 @@
+name: KitBattleAddon
+main: me.peopleXrCb.kitbattleaddon.KitBattleAddonPlugin
+version: 1.0.0
+softdepend: [KitBattle]
