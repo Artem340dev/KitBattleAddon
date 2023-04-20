@@ -1,9 +1,6 @@
 package me.peopleXrCb.kitbattleaddon;
 
-import me.peopleXrCb.kitbattleaddon.abilities.GlitcherAbility;
-import me.peopleXrCb.kitbattleaddon.abilities.ScorpionAbility;
-import me.peopleXrCb.kitbattleaddon.abilities.SnailAbility;
-import me.peopleXrCb.kitbattleaddon.abilities.WrathAbility;
+import me.peopleXrCb.kitbattleaddon.abilities.*;
 import me.wazup.kitbattle.Kit;
 import me.wazup.kitbattle.KitbattleAPI;
 import me.wazup.kitbattle.abilities.AbilityManager;
@@ -16,6 +13,11 @@ public class KitBattleAddonPlugin extends JavaPlugin {
         AbilityManager.getInstance().registerAbility(new ScorpionAbility());
         AbilityManager.getInstance().registerAbility(new GlitcherAbility());
         AbilityManager.getInstance().registerAbility(new WrathAbility());
+        AbilityManager.getInstance().registerAbility(new AvatarAbility());
+        AbilityManager.getInstance().registerAbility(new BerserkAbility());
+        AbilityManager.getInstance().registerAbility(new SilvermonnerAbility());
+        AbilityManager.getInstance().registerAbility(new MonkkAbility());
+        AbilityManager.getInstance().registerAbility(new VampireBAbility());
 
         AbilityManager.getInstance().loadAbilitiesConfig();
         AbilityManager.getInstance().updateKitAbilities();
